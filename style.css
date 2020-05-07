@@ -1,0 +1,22 @@
+.sidebar{
+    background-color: rgba(59, 59, 59, 0.438);
+}
+.con{
+    background-color: rgba(184, 52, 52, 0.438);
+    margin-top: 60px;
+
+}
+
+#image{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.article{
+    padding: 15px;
+    font-size: 25px;
+}
+
+.article>h2{
+    margin-top: 5px;
+}
