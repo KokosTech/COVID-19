@@ -79,5 +79,17 @@ h1{
     font-size: 20px;
     bottom: 15px;
     top: 75px;
+    text-align: center;
 }
 
+.flags{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+#content{
+    margin: 0 0;
+    padding-right: 25%;
+    word-wrap: break-word; 
+}
