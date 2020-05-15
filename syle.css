@@ -88,8 +88,12 @@ h1{
     border-radius: 5px;
 }
 
+/* */
+
 #content{
     margin: 0 0;
     padding-right: 25%;
     word-wrap: break-word; 
 }
+
+
