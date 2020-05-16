@@ -17,7 +17,6 @@
     font-family: 'Product Sans Black Regular';
     color: var(--font-color);
     text-shadow: 2px 2px 7px var(--color-accent);
-    );
 }
 
 html{
@@ -82,7 +81,7 @@ h1{
     text-align: center;
 }
 
-.flags{
+img{
     width: 100%;
     display: block;
     border-radius: 5px;
@@ -90,10 +89,26 @@ h1{
 
 /* */
 
+
 #content{
     margin: 0 0;
-    padding-right: 25%;
+    width: 75%;
     word-wrap: break-word; 
+    height: 100%;
 }
 
+#top_article{
+    background-color: var(--color-primary);
+    margin-top: 17px;
+    border-radius: 7px;
+}
 
+#inner_top_article{
+    padding: 15px;
+}
+
+h2{
+    margin: 0 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
