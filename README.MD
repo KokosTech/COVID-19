@@ -1,4 +1,4 @@
-# COVID-19
+# The modern COVID-19
 
 [Лого - в производство]
 
