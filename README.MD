@@ -1,6 +1,6 @@
 # The modern COVID-19
 
-[github-small](https://github.com/KokosTech/COVID-19/blob/master/icons/COVID-logo.png)
+[](https://github.com/KokosTech/COVID-19/blob/master/icons/COVID-logo.png)
 
 # Описание:
 Това е сайт за коронавируса (COVID-19). Този сайт ви позволява да се информирате с последните съвети на учените, позволява ви да видите колко са заразените и смъртните случаи, както и да видите дали трябва да се тествате. Една от ключовите характеристики на сайта е неговият нов и модерен дизайн.
