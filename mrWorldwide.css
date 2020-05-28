@@ -2,6 +2,7 @@
     --color-primary: #cacacab6;
     --color-secondary: #ffffff;
     --color-accent: #4444444d;
+    --color-focus: #4444444b;
     --font-color: #000000;
     transition: ease-in-out 250ms;
 }
@@ -9,6 +10,7 @@
     --color-primary: #3b3b3bad;
     --color-secondary: #000000;
     --color-accent: #d3d3d31e;
+    --color-focus: #d3d3d32f;
     --font-color: #ffffff;
     transition: ease-in-out 250ms;
 }
@@ -22,6 +24,17 @@
 html{
     background-color: var(--color-secondary);
 }
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+}
+
+
 /* navigation bar*/
 #navy{
     margin: 0 auto;

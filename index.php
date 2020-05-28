@@ -1,10 +1,20 @@
+<?php
+    date_default_timezone_set('Europe/Sofia');
+    include 'conn.inc.php';
+    include 'fun.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 | Kaloyan Tech</title>
     <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="commentS.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="mrWorldwide.css">
     <script src="main.js"></script>
@@ -27,15 +37,14 @@
             <p>Общо случаи:<br>
                 <span class="cases" id="bgcases">
                     <?php                
-                        include 'fun.php';
-                        print_num("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 1);
+                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 1);
                     ?>
                 </span>
             </p>
             <p>Смъртни случаи:<br>
                 <span class="deathroll" id="bgdeaths">
                     <?php                
-                        print_num("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 2);
+                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 2);
                     ?>
                 </span>
             </p>
@@ -46,14 +55,14 @@
             <p>Общо случаи:<br>
                 <span class="cases" id="wwcases">
                     <?php                
-                        print_num("https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true" , 4);
+                        getNum("https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true" , 4);
                     ?>
                 </span>
             </p>
             <p>Смъртни случаи:<br>
                 <span class="deathroll" id="wwdeaths">
                     <?php                
-                        print_num("https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true" , 6);
+                        getNum("https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true" , 6);
                     ?>
                 </span>
             </p>
@@ -67,16 +76,21 @@
                 <h2 id="t_title">Протест в София</h2>
             </div>
         </div>
-
-            <div id="other_news">
-            <div id="inner_other_news">
-                
-            </div>
-        </div>
-        <div id="tips">
-        </div>
         <div id="comment_section">
-
+            <?php
+                echo"
+                    <form id='com'method='POST' action='".setComments($conn)."'>
+                        <h3 style='margin: 0 0; margin-bottom: 5px'>Comment:</h3>
+                        <input class='ff' type='text' name='uid' require placeholder='Name'>
+                        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+                        <textarea class='ff' name='message' require placeholder='Type here...'></textarea>
+                        <button class='ff' type='submit' name='commentSubmit' id='submit'>Comment</button>
+                    </form>
+                ";
+            ?>
+            <div id="comments">
+                <?php getComments($conn); ?> 
+            </div>
         </div>
         <footer>
 
