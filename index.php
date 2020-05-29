@@ -22,12 +22,12 @@
     <link rel="icon" href="icons/COVID-logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+<body id="body">
     <header id="con">
         <div id="navy">
-            <a href="survey">Тест</a>
+            <a href="survey" class="navlink">Тест</a>
             <h1 onclick="toggleTheme();">COVID-19</h1>
-            <a href="aboutus">За нас</a>
+            <a href="aboutus" class="navlink">За нас</a>
         </div>
     </header>
     <div id="else">
@@ -71,17 +71,29 @@
         </div>
     </div>
     <div id="content">
-        <div id="top_article">
+        <div id="top_article" class="div">
             <div id="inner_top_article">
                 <img id="t_img" src="https://webnews.bg/uploads/images/21/9421/479421/768x432.jpg?_=1589462334" alt="">
                 <h2 id="t_title">Протест в София</h2>
             </div>
         </div>
+        <div id="tips" class="div">
+            <h3 id="h3">Как да се предпазим?</h3>
+                <h5>Може да правиш много полезни неща, за да се защитиш от вируса. Ето някои от тях:</h5>
+                <ul>
+                    <li><b>Стой вкъщи</b> и си направи интересен план с различни неща за вършене.</li>
+                    <li>Мий често ръцете си като следваш тези 5 стъпки: намокряш, насапунисваш (с балончета), разтъркваш ръцете една в друга много пъти, изплакваш и изсушаваш. Натисни <a href="article/tips/how-to-wash-your-hands">ТУК</a>, ако искаш да научиш повече за това как да си миеш ръцете!</li>
+                    <li>Когато кихаш или кашляш, използвай лакътя си или носна кърпичка, която трябва да изхвърлиш веднага след това.</li>
+                    <li> Не пипай устата, очите и носа си с немити ръце – така вирусът няма да може да влезе в тялото ти и да те разболее.</li>
+                    <li>Когато ти се налага да си с други хора, бъди на голямо разстояние – поне два метра.</li>
+                    <li>Дръж вещите си чисти! Учените и медиците все още изследват новия вирус, но предполагат, че той се задържа най-много върху всички видове банкноти, стъклени предмети, пластмаса и желязо, плат, дърво и най-малко върху картон или носни кърпички. </li>
+                </ul>        
+        </div>
         <div id="comment_section">
             <?php
                 echo"
                     <form id='com'method='POST' action='".setComments($conn)."'>
-                        <h3 style='margin: 0 0; margin-bottom: 5px'>Comment:</h3>
+                        <h3 style='margin: 0 0; margin-bottom: 5px'>Коментирай:</h3>
                         <input class='ff' type='text' name='uid' require placeholder='Name'>
                         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
                         <textarea class='ff' name='message' require placeholder='Type here...'></textarea>
@@ -98,6 +110,8 @@
         </footer>
     </div>
     </div>
+
+    <script src="mobile.js"></script>
 
 </body>
 </html>
