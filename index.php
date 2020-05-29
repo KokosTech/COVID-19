@@ -1,26 +1,28 @@
 <?php
     date_default_timezone_set('Europe/Sofia');
-    include 'conn.inc.php';
-    include 'fun.inc.php';
+    include 'php/conn.inc.php';
+    include 'php/fun.inc.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script data-ad-client="ca-pub-1785200103429012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta charset="UTF-8">
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>COVID-19 | Kaloyan Tech</title>
-    <link rel="stylesheet" href="syle.css">
-    <link rel="stylesheet" href="commentS.css">
+
+    <link rel="stylesheet" href="css/syle.css">
+    <link rel="stylesheet" href="css/commentS.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="mrWorldwide.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/mrWorldwide.css">
     <link rel="icon" href="icons/COVID-logo.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script data-ad-client="ca-pub-1785200103429012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body id="body">
     <header id="con">
@@ -81,12 +83,27 @@
             <h3 id="h3">Как да се предпазим?</h3>
                 <h5>Може да правиш много полезни неща, за да се защитиш от вируса. Ето някои от тях:</h5>
                 <ul>
-                    <li><b>Стой вкъщи</b> и си направи интересен план с различни неща за вършене.</li>
-                    <li>Мий често ръцете си като следваш тези 5 стъпки: намокряш, насапунисваш (с балончета), разтъркваш ръцете една в друга много пъти, изплакваш и изсушаваш. Натисни <a href="article/tips/how-to-wash-your-hands">ТУК</a>, ако искаш да научиш повече за това как да си миеш ръцете!</li>
-                    <li>Когато кихаш или кашляш, използвай лакътя си или носна кърпичка, която трябва да изхвърлиш веднага след това.</li>
-                    <li> Не пипай устата, очите и носа си с немити ръце – така вирусът няма да може да влезе в тялото ти и да те разболее.</li>
-                    <li>Когато ти се налага да си с други хора, бъди на голямо разстояние – поне два метра.</li>
-                    <li>Дръж вещите си чисти! Учените и медиците все още изследват новия вирус, но предполагат, че той се задържа най-много върху всички видове банкноти, стъклени предмети, пластмаса и желязо, плат, дърво и най-малко върху картон или носни кърпички. </li>
+                    <li>
+                        <b>Стой вкъщи</b>
+                         и си направи интересен план с различни неща за вършене.
+                    </li>
+                    <li>
+                        Мий често ръцете си като следваш тези 5 стъпки: намокряш, насапунисваш (с балончета), разтъркваш ръцете една в друга много пъти, изплакваш и изсушаваш. 
+                        Натисни <a href="article/tips/how-to-wash-your-hands">ТУК</a>, ако искаш да научиш повече за това как да си миеш ръцете!
+                    </li>
+                    <li>
+                        Когато кихаш или кашляш, използвай лакътя си или носна кърпичка, която трябва да изхвърлиш веднага след това.
+                    </li>
+                    <li>
+                        Не пипай устата, очите и носа си с немити ръце – така вирусът няма да може да влезе в тялото ти и да те разболее.
+                    </li>
+                    <li>
+                        Когато ти се налага да си с други хора, бъди на голямо разстояние – поне два метра.
+                    </li>
+                    <li>
+                        Дръж вещите си чисти! Учените и медиците все още изследват новия вирус, но предполагат, че той се задържа най-много върху всички видове банкноти, 
+                        стъклени предмети, пластмаса и желязо, плат, дърво и най-малко върху картон или носни кърпички.
+                    </li>
                 </ul>        
         </div>
         <div id="comment_section">
@@ -111,7 +128,7 @@
     </div>
     </div>
 
-    <script src="mobile.js"></script>
+    <script src="js/mobile.js"></script>
 
 </body>
 </html>

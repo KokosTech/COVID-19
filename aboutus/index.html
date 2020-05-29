@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>COVID-19 Тест| Kaloyan Tech</title>
+
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <link rel="stylesheet" href="../mrWorldwide.css">
-    <script src="../main.js"></script>
-    <link rel="icon" href="icons/COVID-logo.png">
+    <link rel="stylesheet" href="../css/mrWorldwide.css">
+    <link rel="icon" href="../icons/COVID-logo.png">
+
+    <script src="../js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
