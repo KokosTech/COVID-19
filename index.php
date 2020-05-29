@@ -73,12 +73,15 @@
         </div>
     </div>
     <div id="content">
-        <div id="top_article" class="div">
-            <div id="inner_top_article">
-                <img id="t_img" src="https://webnews.bg/uploads/images/21/9421/479421/768x432.jpg?_=1589462334" alt="">
-                <h2 id="t_title">Протест в София</h2>
+        <a href="main-article">
+            <div id="top_article" class="div">
+                <div id="inner_top_article">
+                    <img id="t_img" src="main-article\image.jpg" alt="">
+                    <h2 id="t_title">Как да си мием ръцете?</h2>
+                </div>
             </div>
-        </div>
+        </a>
+        
         <div id="tips" class="div">
             <h3 id="h3">Как да се предпазим?</h3>
                 <h5>Може да правиш много полезни неща, за да се защитиш от вируса. Ето някои от тях:</h5>

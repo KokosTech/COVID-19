@@ -8,21 +8,96 @@
 
     <link rel="stylesheet" href="../fonts/fonts.css">
     <link rel="stylesheet" href="../css/mrWorldwide.css">
+    <link rel="stylesheet" href="../css/syle.css">
     <link rel="icon" href="../icons/COVID-logo.png">
+    <link rel="stylesheet" href="style.css">
 
     <script src="../js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body id="body">
     <header id="con">
-        <div id="navy">
-            <a href="..">Начало</a>
+        <div id="navy" a>
+            <a href=".." class="navlink">Начало</a>
             <h1 onclick="toggleTheme();">Тест</h1>
-            <a href="../aboutus">За нас</a>
+            <a href="../aboutus" class="navlink">За нас</a>
         </div>
     </header>
-    <div>
+    <div id="else">
+        <div id="quiz">
+            <div id="q1" class="div">
+                <h2>Това спешен случай ли е?</h2>
+                <h4>Спрете и се обадете на 112, ако изпитвате:</h4>
+                <ul id="symp">
+                    <li>Тежка, постоянна болка в гърдите или натиск</li>
+                    <li>Изключително затруднено дишане</li>
+                    <li>Тежка, постоянна замаяност</li>
+                    <li>Сериозна дезориентация</li>
+                </ul>
+                <button onclick="q1()" id="btn1">Нямам нито един от тези симптоми</button>
+                <button onclick="window.open('emergency' , '_self')" id="btn2">Да, имам един от изброените симптоми</button>
+            </div>
+            <div id="q2" class="div">
+                <h2>На колко години сте?</h2>
+                <button onclick="q2('good')">Под 64г.</button>
+                <button onclick="q2('bad')">Над 64г.</button>
+            </div>
+            <div id="q3" class="div">
+                <h2>Наскоро изпитвали ли сте някой от изброените симптоми?</h2>
+                <ul>
+                    <li>Треска или втрисане</li>
+                    <li>Леко или умерено затруднено дишане</li>
+                    <li>Нова или влошаваща се кашлица</li>
+                    <li>Продължителна загуба на миризма, вкус или апетит</li>
+                    <li>Възпалено гърло</li>
+                    <li>Повръщане или диария</li>
+                    <li>Боли в цялото тяло</li>
+                </ul>
+                <button onclick="q3('bad')">Да</button>
+                <button onclick="q3('good')">Не</button>
+            </div>
+            <div id="q4" class="div">
+                <h2>Имате ли някои от следните заболявания?</h2>
+                <ul>
+                    <li>Астма</li>
+                    <li>Рак</li>
+                    <li>ХИВ</li>
+                    <li>Сериозни проблеми със сърцето</li>
+                    <li>Диабет със затруднения</li>
+                    <li>Сериозни проблеми с бъбреците</li>
+                    <li>Цироза на черния дроб</li>
+                    <li>Крайно затлъстяване</li>
+                </ul>
+                <button onclick="q4('bad')">Да</button>
+                <button onclick="q4('good')">Не</button>
+            </div>
+            <div id="q5" class="div">
+                <h2>Пътували ли сте в чужбина наскоро?</h2>
+                <button onclick="q5('bad')">Да</button>
+                <button onclick="q5('good')">Не</button>
+            </div>
+            <div id="q6" class="div">
+                <h2>Живеете ли в населено място с много заразени?</h2>
+                <button onclick="q6('bad')">Да</button>
+                <button onclick="q6('good')">Не</button>
+            </div>
+            <div id="q7" class="div">
+                <h2>През последните дни били ли сте изложени на контакт със заразен?</h2>
+                <button onclick="q7('bad')">Да</button>
+                <button onclick="q7('good')">Не</button>
+            </div>
+            <div id="q8" class="div">
+                <h2>Работите ли в болница?</h2>
+                <button onclick="q8('bad')">Да</button>
+                <button onclick="q8('good')">Не</button>
+            </div>
+            <div id="res" class="div">
+                <h2 id="hey"></h2>
+            </div>
+        </div>
     </div>
+    <script src="pls.js"></script>
+    <script src="../js/mobile.js"></script>
 </body>
 </html>

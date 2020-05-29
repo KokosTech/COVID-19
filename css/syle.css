@@ -79,13 +79,17 @@ h2{
     font-size: 2.5vw;
 }
 
+a{
+    text-decoration: none;
+}
+
 #t_img{
     width: 100%;
     border-radius: 5px;
 }
 
 @media screen and (max-height: 756px){
-    h3{
+    #sidebar h3{
         display: none;
     }
     p{
@@ -95,11 +99,6 @@ h2{
 }
 
 @media screen and (max-width: 689px){
-    #navy{
-        width: 95% !important;
-        margin: 5px;
-    }
-
     #sidebar{
         position: static;
         width: 100%;
@@ -127,6 +126,6 @@ h2{
         width: 100%;
     }
     h2{
-        font-size: 3rem !important;
+        font-size: 2rem !important;
     }
 }
