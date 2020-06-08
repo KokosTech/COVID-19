@@ -40,14 +40,14 @@
             <p>Общо случаи:<br>
                 <span class="cases" id="bgcases">
                     <?php                
-                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 1);
+                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 6);
                     ?>
                 </span>
             </p>
             <p>Смъртни случаи:<br>
                 <span class="deathroll" id="bgdeaths">
                     <?php                
-                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 2);
+                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 7);
                     ?>
                 </span>
             </p>
