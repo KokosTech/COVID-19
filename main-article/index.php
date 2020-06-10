@@ -13,7 +13,7 @@
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Тест COVID-19 | Kaloyan Tech</title>
+    <title>Новини | COVID-19 | Kaloyan Tech</title>
 
     <link rel="stylesheet" href="../css/syle.css">
     <link rel="stylesheet" href="../css/commentS.css">
