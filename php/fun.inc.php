@@ -32,14 +32,14 @@
             $uid = $_POST['uid'];
             $date = $_POST['date'];
             $message = $_POST['message'];
-
+            
             $sql = "INSERT INTO comments (uid, date, message) VALUES ('$uid' , '$date' , '$message')";
             $result = $conn->query($sql);
         }
     }
 
     function getComments($conn){
-        $sql = "SELECT * FROM comments";
+        $sql = "SELECT * FROM comments ORDER BY `cid` ASC";
         $result = $conn->query($sql);
         while($row = $result->fetch_assoc()){
             echo "
@@ -64,7 +64,7 @@
     }
 
     function getComments2($conn){
-        $sql = "SELECT * FROM comments2";
+        $sql = "SELECT * FROM comments2 ORDER BY `cid` ASC";
         $result = $conn->query($sql);
         while($row = $result->fetch_assoc()){
             echo "

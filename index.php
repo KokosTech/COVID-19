@@ -22,6 +22,8 @@
     <link rel="icon" href="icons/COVID-logo.png">
 
     <script src="js/main.js"></script>
+
+    <script src="https://hcaptcha.com/1/api.js?" async defer></script>
     <script data-ad-client="ca-pub-1785200103429012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body id="body">
@@ -40,7 +42,7 @@
             <p>Общо случаи:<br>
                 <span class="cases" id="bgcases">
                     <?php                
-                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 6);
+                        getNum("https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true" , 2);
                     ?>
                 </span>
             </p>
@@ -114,9 +116,10 @@
                 echo"
                     <form id='com'method='POST' action='".setComments($conn)."'>
                         <h3 style='margin: 0 0; margin-bottom: 5px'>Коментирай:</h3>
-                        <input class='ff' type='text' name='uid' require placeholder='Name'>
+                        <input class='ff' type='text' name='uid' required placeholder='Name'>
                         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-                        <textarea class='ff' name='message' require placeholder='Type here...'></textarea>
+                        <textarea class='ff' name='message' required placeholder='Type here...'></textarea>
+                        <div class='h-captcha' data-sitekey='b20349ae-6b8f-49ea-9fd4-1c56829a94bf' class='hc' data-theme='dark'></div>
                         <button class='ff' type='submit' name='commentSubmit' id='submit'>Comment</button>
                     </form>
                 ";
@@ -132,6 +135,10 @@
     </div>
 
     <script src="js/mobile.js"></script>
-
+    <script>
+        if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+        }
+</script>
 </body>
 </html>

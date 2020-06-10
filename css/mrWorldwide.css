@@ -82,3 +82,8 @@ button{
         margin-left: 0
     }
 }
+
+.hs{
+    background-color: black;
+    border-radius: 7px;
+}
