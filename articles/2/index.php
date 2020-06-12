@@ -37,25 +37,25 @@
         }
         @media screen and (max-width: 600px){
             h1{
-                font-size: 15px;
+                font-size: 23px;
             }
         }
 
     </style>
 </head>
-<body>
+<body id="body">
     <header id="con">
         <div id="navy">
-            <a href="../../.." class="navlink">Начало</a>
-            <h1 onclick="toggleTheme();">Какво да направим, ако имаме симптоми на COVID-19?</h1>
-            <a href="../../../aboutus" class="navlink">За нас</a>
+            <a href="../.." class="navlink">Начало</a>
+            <h1 onclick="toggleTheme();">Имаме симптоми на COVID-19?!</h1>
+            <a href="../../aboutus" class="navlink">За нас</a>
         </div>
     </header>
     <div id="else">
         <div id="sidebar">
             <div>
                 <h3>България</h3>
-                <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg" alt="">
+                <img class="flags" src="../../img/bg.png" alt="">
                 <p>Общо случаи:<br>
                     <span class="cases" id="bgcases">
                         <?php                
@@ -73,7 +73,7 @@
             </div>
             <div>
                 <h3>Свят</h3>
-                <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/International_Flag_of_Planet_Earth.svg/1200px-International_Flag_of_Planet_Earth.svg.png" alt="">
+                <img class="flags" src="../../img/ww.png" alt="">
                 <p>Общо случаи:<br>
                     <span class="cases" id="wwcases">
                         <?php                
@@ -88,12 +88,12 @@
                         ?>
                     </span>
                 </p>
-    
+
             </div>
         </div>
         <div id="content">
             <div class="div">
-                <img src="https://nstatic.nova.bg/public/pics/nova/article/980x551_1580735058.jpg" alt="Симптоми">
+                <img src="../img/980x551_1580735058.jpg" alt="Симптоми">
             </div>
             <div class="div">
                 <p>Ако имате грипоподобни симптоми (повишена телесна температура, треска, кашлица, затруднено дишане, мускулни болки) – трябва да се обадите по телефон на Вашия общопрактикуващ лекар. Той ще прецени здравословното Ви състояние, ще го съобрази с данните за предишни заболявания, които има в пациентското Ви досие и ще Ви даде допълнителни инструкции. Задължително информирайте лекаря си, ако имате установен контакт с положително за COVID-19 лице
@@ -152,6 +152,12 @@
                     iframe{
                         border-radius: 7px;
                     }
+
+                    @media screen and (max-width: 666px){
+                        .divy{
+                            width: 100%;
+                        }
+                    }
                 </style>
                 <div class="divy">
                     <div class='embed-container'>
@@ -176,5 +182,6 @@
             </div>
         </div>
     </div>
+    <script src="../../js/mobile.js"></script>
 </body>
 </html>

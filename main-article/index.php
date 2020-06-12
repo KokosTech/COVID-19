@@ -54,7 +54,7 @@
     <div id="sidebar">
         <div>
             <h3>България</h3>
-            <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg" alt="">
+            <img class="flags" src="../img/bg.png" alt="">
             <p>Общо случаи:<br>
                 <span class="cases" id="bgcases">
                     <?php                
@@ -72,7 +72,7 @@
         </div>
         <div>
             <h3>Свят</h3>
-            <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/International_Flag_of_Planet_Earth.svg/1200px-International_Flag_of_Planet_Earth.svg.png" alt="">
+            <img class="flags" src="../img/ww.png" alt="">
             <p>Общо случаи:<br>
                 <span class="cases" id="wwcases">
                     <?php                

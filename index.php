@@ -38,7 +38,7 @@
     <div id="sidebar">
         <div>
             <h3>България</h3>
-            <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg" alt="">
+            <img class="flags" src="img/bg.png" alt="">
             <p>Общо случаи:<br>
                 <span class="cases" id="bgcases">
                     <?php                
@@ -56,7 +56,7 @@
         </div>
         <div>
             <h3>Свят</h3>
-            <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/International_Flag_of_Planet_Earth.svg/1200px-International_Flag_of_Planet_Earth.svg.png" alt="">
+            <img class="flags" src="img/ww.png" alt="">
             <p>Общо случаи:<br>
                 <span class="cases" id="wwcases">
                     <?php                
@@ -83,21 +83,32 @@
                 </div>
             </div>
         </a>
-        <div>
-            <a href="articles/1">
-                <div>
-                    <img src="" alt="">
-                    <h3>Защо да носим маски?</h3>
-                </div>
-                <div href="articles/2">
-                    <img src="" alt="">
-                    <h3>Защо да носим маски?</h3>
-                </div>
-                <div href="articles/3">
-                    <img src="" alt="">
-                    <h3>Защо да носим маски?</h3>
-                </div>
-            </a>
+        <div id="o_art">
+            <div class="div art" id="fa">
+                <a href="articles/1">
+                    <div>
+                        <img src="articles/img/maska-protiv-koronavirus.jpg" alt="">
+                        <h3>Защо да носим маски?</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="div art">
+                <a href="articles/2">
+                    <div>
+                        <img src="articles/img/980x551_1580735058.jpg" alt="">
+                        <h3>Имаме симптоми на COVID-19?!</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="div art">
+                <a href="articles/3">
+                    <div>
+                        <img src="articles/img/syringe-1884784_640.jpg" alt="">
+                        <h3>Домашно лечение</h3>
+                    </div>
+                </a>               
+            </div>
+
         </div>
         <div id="tips" class="div">
             <h3 id="h3">Как да се предпазим?</h3>

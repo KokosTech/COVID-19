@@ -44,10 +44,6 @@
     padding: 15px;
 }
 
-#tips{
-    margin-top: 15px;
-}
-
 #tips h3{
     margin: 0 0;
     font-size: 23px;
@@ -88,6 +84,31 @@ a{
     border-radius: 5px;
 }
 
+#o_art{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.art{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#fa{
+    margin-left: 0;
+}
+
+.art img{
+    border-radius: 7px;
+    width: 100%;
+}
+
+.art h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 @media screen and (max-height: 756px){
     #sidebar h3{
         display: none;
@@ -98,7 +119,7 @@ a{
     }
 }
 
-@media screen and (max-width: 689px){
+@media screen and (max-width: 700px){
     #sidebar{
         position: static;
         width: 100%;
@@ -127,5 +148,13 @@ a{
     }
     h2{
         font-size: 2rem !important;
+    }
+
+    #o_art{
+        flex-direction: column;
+    }
+
+    .art{
+        margin-left: 0;
     }
 }

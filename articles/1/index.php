@@ -13,7 +13,7 @@
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Новини | COVID-19 | Kaloyan Tech</title>
+    <title>Защо да носим маски? | COVID-19 | Kaloyan Tech</title>
 
     <link rel="stylesheet" href="../../css/syle.css">
     <link rel="stylesheet" href="../../css/commentS.css">
@@ -37,25 +37,25 @@
         }
         @media screen and (max-width: 600px){
             h1{
-                font-size: 15px;
+                font-size: 25px;
             }
         }
 
     </style>
 </head>
-<body>
+<body id="body">
     <header id="con">
         <div id="navy">
-            <a href="../../.." class="navlink">Начало</a>
+            <a href="../.." class="navlink">Начало</a>
             <h1 onclick="toggleTheme();">Защо да носим маски?</h1>
-            <a href="../../../aboutus" class="navlink">За нас</a>
+            <a href="../../aboutus" class="navlink">За нас</a>
         </div>
     </header>
     <div id="else">
         <div id="sidebar">
             <div>
                 <h3>България</h3>
-                <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg" alt="">
+                <img class="flags" src="../../img/bg.png" alt="">
                 <p>Общо случаи:<br>
                     <span class="cases" id="bgcases">
                         <?php                
@@ -73,7 +73,7 @@
             </div>
             <div>
                 <h3>Свят</h3>
-                <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/International_Flag_of_Planet_Earth.svg/1200px-International_Flag_of_Planet_Earth.svg.png" alt="">
+                <img class="flags" src="../../img/ww.png" alt="">
                 <p>Общо случаи:<br>
                     <span class="cases" id="wwcases">
                         <?php                
@@ -88,12 +88,12 @@
                         ?>
                     </span>
                 </p>
-    
+
             </div>
         </div>
         <div id="content">
             <div class="div">
-                <img src="https://moeto-zdrave.com/image/catalog/Optimized/maska-protiv-koronavirus.jpg" alt="Момиче с маска">
+                <img src="../img/maska-protiv-koronavirus.jpg" alt="Момиче с маска">
             </div>
             <div class="div">
                 <h3>На теория: защо маските имат значение?</h3>
@@ -122,7 +122,7 @@
                 </ol>
             </div>
             <div class="div">
-                <img src="https://moeto-zdrave.com/image/catalog/blog/vidove-maski-koronavirus-thumb.jpg" alt="Видове маски">
+                <img src="../img/vidove-maski-koronavirus-thumb.jpg" alt="Видове маски">
             </div>
             <div class="div">
                 <h3>Заключение</h3>
