@@ -1,7 +1,7 @@
 <?php
     date_default_timezone_set('Europe/Sofia');
-    include '../php/conn.inc.php';
-    include '../php/fun.inc.php';
+    include '../../php/conn.inc.php';
+    include '../../php/fun.inc.php';
 ?>
 
 <!DOCTYPE html>
