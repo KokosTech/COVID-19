@@ -83,7 +83,22 @@
                 </div>
             </div>
         </a>
-        
+        <div>
+            <a href="articles/1">
+                <div>
+                    <img src="" alt="">
+                    <h3>Защо да носим маски?</h3>
+                </div>
+                <div href="articles/2">
+                    <img src="" alt="">
+                    <h3>Защо да носим маски?</h3>
+                </div>
+                <div href="articles/3">
+                    <img src="" alt="">
+                    <h3>Защо да носим маски?</h3>
+                </div>
+            </a>
+        </div>
         <div id="tips" class="div">
             <h3 id="h3">Как да се предпазим?</h3>
                 <h5>Може да правиш много полезни неща, за да се защитиш от вируса. Ето някои от тях:</h5>
@@ -114,7 +129,7 @@
         <div id="comment_section">
             <?php
                 echo"
-                    <form id='com'method='POST' action='".setComments($conn)."'>
+                    <form id='com'method='POST' action='".setComments($conn, 'comments')."'>
                         <h3 style='margin: 0 0; margin-bottom: 5px'>Коментирай:</h3>
                         <input class='ff' type='text' name='uid' required placeholder='Name'>
                         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
@@ -125,7 +140,7 @@
                 ";
             ?>
             <div id="comments">
-                <?php getComments($conn); ?> 
+                <?php getComments($conn, 'comments'); ?> 
             </div>
         </div>
         <footer>

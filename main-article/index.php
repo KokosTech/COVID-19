@@ -34,7 +34,7 @@
         html{
             scroll-behavior: smooth;
         }
-        @media and screen (max-width: 600px){
+        @media screen and (max-width: 600px){
             h1{
                 font-size: 15px;
             }
@@ -93,7 +93,6 @@
     <div id="content">
         <div id="tips" >
             <div class="div" style="text-align: center;">
-                <h2></h2>
                 <img src="image.jpg" alt="washing hands">
             </div>
             <img src="" alt="">
@@ -168,7 +167,7 @@
         <div id="comment_section">
             <?php
                 echo"
-                    <form id='com'method='POST' action='".setComments2($conn)."'>
+                    <form id='com'method='POST' action='".setComments($conn, 'comments2')."'>
                         <h3 style='margin: 0 0; margin-bottom: 5px'>Коментирай:</h3>
                         <input class='ff' type='text' name='uid' require placeholder='Name'>
                         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
@@ -178,7 +177,7 @@
                 ";
             ?>
             <div id="comments">
-                <?php getComments2($conn); ?> 
+                <?php getComments($conn, 'comments2'); ?> 
             </div>
         </div>
         <footer>

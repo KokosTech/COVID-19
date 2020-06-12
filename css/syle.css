@@ -59,12 +59,12 @@
     margin-top: 10px;
 }
 
-#tips ul{
+ul, ol{
     list-style-type: none;
     padding-left: 0;
 }
 
-#tips li{
+li{
     margin-top: 15px;
     background-color: var(--color-accent);
     padding: 7px;
