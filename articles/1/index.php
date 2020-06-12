@@ -46,9 +46,9 @@
 <body>
     <header id="con">
         <div id="navy">
-            <a href=".." class="navlink">Начало</a>
+            <a href="../../.." class="navlink">Начало</a>
             <h1 onclick="toggleTheme();">Защо да носим маски?</h1>
-            <a href="../aboutus" class="navlink">За нас</a>
+            <a href="../../../aboutus" class="navlink">За нас</a>
         </div>
     </header>
     <div id="else">
